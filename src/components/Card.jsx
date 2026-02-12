@@ -7,7 +7,7 @@ const Card = ({title,img,price,rate,instructor}) => {
 
             <div className='bg-gray-100 h-[450px] shadow-lg rounded-xl shadow-lg overflow-hidden hover:shadow-2xl'>
               <div className='w-full h-2/4'>
-                <img className='w-full h-full object-cover rounded-b-xl' src="https://img-c.udemycdn.com/course/480x270/6035102_7d1a.jpg" alt="" />
+                <img className='w-full h-full object-cover rounded-b-xl' src={img} alt="" />
               </div>
               <div className='px-4 py-1'>
                 <span className='text-blue-600 text-lg'>Developer</span>

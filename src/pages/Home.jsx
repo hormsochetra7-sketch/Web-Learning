@@ -2,9 +2,10 @@ import React from 'react'
 import { IoMdStar } from "react-icons/io";
 import Card from '../components/Card';
 import { courses } from '../data/Data';
+import { Link } from 'react-router-dom';
 const Home = () => {
   return (
-    <div className='w-full md:w-4/5 shadow mx-auto my-4 p-5 rounded-2xl'>
+    <div className='w-full md:w-4/5 shadow mx-auto my-3 p-5 rounded-2xl'>
       <div className=' bg-blue-600 md:flex md:px-4 md:py-7 rounded-2xl'>
         <div className='w-full md:full lg:w-3/5'>
         <h1 className='text-8xl font-bold text-white'>Learn Without Limit</h1>
@@ -24,7 +25,7 @@ const Home = () => {
             </button>
         </div>
         </div>
-        <div className='w-full md:full lg:w-2/5 rounded-lg bg-gray-100 md:p-7 mt-3.5 '>
+        <div className='w-full md:full lg:w-2/5 rounded-lg bg-gray-100 md:p-3 mt-3.5 '>
         <ul className='bg-gray-100 p-5 rounded-xl grid  gap-10'>
           <li className='flex flex-cols gap-2.5'>
           <div className='w-15 h-15 bg-blue-50 rounded-2xl p-2'>
@@ -37,20 +38,20 @@ const Home = () => {
           </li>
           <li className='flex flex-cols gap-2.5'>
           <div className='w-15 h-15 bg-blue-50 rounded-2xl p-2'>
-            <img src="https://img.icons8.com/?size=100&id=fH22K8x6Yvz6&format=png&color=000000" alt="" />
+            <img src="https://img.icons8.com/?size=100&id=wedvG5aPAzPV&format=png&color=000000" alt="" />
           </div>
           <div>
-            <h1 className='font-bold text-2xl'>Studing With Course</h1>
-            <h2 className='text-blue-600'>Learning To Perfect</h2>
+            <h1 className='font-bold text-2xl'>50K+ Students</h1>
+            <h2 className='text-blue-600'>Join our community</h2>
           </div>
           </li>
           <li className='flex flex-cols gap-2.5'>
           <div className='w-15 h-15 bg-blue-50 rounded-2xl p-2'>
-            <img src="https://img.icons8.com/?size=100&id=fH22K8x6Yvz6&format=png&color=000000" alt="" />
+            <img src="https://img.icons8.com/?size=100&id=SFC6V6WQ1uvH&format=png&color=000000" alt="" />
           </div>
           <div>
-            <h1 className='font-bold text-2xl'>Studing With Course</h1>
-            <h2 className='text-blue-600'>Learning To Perfect</h2>
+            <h1 className='font-bold text-2xl'>4.8 Rating</h1>
+            <h2 className='text-blue-600'>From 10K+ reviews</h2>
           </div>
           </li>
 
@@ -67,47 +68,61 @@ const Home = () => {
       </p>
       </div>
       <div className='flex justify-center mt-20'>
-      <div className='grid gris-cols-2 md:grid-cols-3 gap-10 lg:grid-cols-4 xl:grid-cols-6'>
-        <div className=' p-5 grid justify-center rounded-xl border border-gray-400 shadow-2xl'>
-          <img classname="grid justify-center" src="https://img.icons8.com/?size=100&id=nK5KokYOqcnT&format=png&color=000000" alt="" />
-          <h2 className='font-bold text-xl'>Development</h2>
-          <p>128 Course</p>
-        </div>
-        <div className=' p-5 grid justify-center rounded-xl border border-gray-400 shadow-2xl'>
-          <img src="https://img.icons8.com/?size=100&id=YD0g81yVoohu&format=png&color=000000" alt="" />
-          <h2 className='font-bold text-xl'>Development</h2>
-          <p>128 Course</p>
-        </div>
-        <div className=' p-5 grid justify-center rounded-xl border border-gray-400 shadow-2xl'>
-          <img src="https://img.icons8.com/?size=100&id=nK5KokYOqcnT&format=png&color=000000" alt="" />
-          <h2 className='font-bold text-xl'>Development</h2>
-          <p>128 Course</p>
-        </div>
-        <div className=' p-5 grid justify-center rounded-xl border border-gray-400 shadow-2xl '>
-          <img src="https://img.icons8.com/?size=100&id=nK5KokYOqcnT&format=png&color=000000" alt="" />
-          <h2 className='font-bold text-xl'>Development</h2>
-          <p>128 Course</p>
-        </div>
-        <div className=' p-5 grid justify-center rounded-xl border border-gray-400 shadow-2xl '>
-          <img src="https://img.icons8.com/?size=100&id=nK5KokYOqcnT&format=png&color=000000" alt="" />
-          <h2 className='font-bold text-xl'>Development</h2>
-          <p>128 Course</p>
-        </div>
+      <div className='grid grid-cols-2 md:grid-cols-3 gap-10 lg:grid-cols-4 xl:grid-cols-6'>
+        <div className='flex px-8 py-2.5 flex-col rounded-xl border border-gray-400 shadow-2xl'>
+  
+          <img classname="w-[100%]" src="https://img.icons8.com/?size=100&id=102552&format=png&color=000000" alt="" />
+          <h2 className='font-bold text-center text-xl'>Development</h2>
+          <p className='text-center'>128 Course</p>            
 
-        <div className=' p-5 grid justify-center rounded-xl border border-gray-400 shadow-2xl '>
-          <img  src="https://img.icons8.com/?size=100&id=nK5KokYOqcnT&format=png&color=000000" alt="" />
-          <h2 className='font-bold text-xl'>Development</h2>
-          <p>128 Course</p>
+        </div>
+        <div className='flex px-8 py-2.5 flex-col rounded-xl border border-gray-400 shadow-2xl'>
+  
+          <img classname="w-[100%]" src="https://img.icons8.com/?size=100&id=2WTPiYe1pxGL&format=png&color=000000" alt="" />
+          <h2 className='font-bold text-center text-xl'>Marking</h2>
+          <p className='text-center'>78 Course</p>            
+
+        </div>
+        <div className='flex px-8 py-2.5 flex-col rounded-xl border border-gray-400 shadow-2xl'>
+  
+          <img classname="w-[100%]" src="https://img.icons8.com/?size=100&id=sO1mMMNJxeLB&format=png&color=000000" alt="" />
+          <h2 className='font-bold text-center text-xl'>Design</h2>
+          <p className='text-center'>100 Course</p>            
+
+        </div>
+        <div className='flex px-8 py-2.5 flex-col rounded-xl border border-gray-400 shadow-2xl'>
+  
+          <img classname="w-[100%]" src="https://img.icons8.com/?size=100&id=0ZH1PKCg6Lcb&format=png&color=000000" alt="" />
+          <h2 className='font-bold text-center text-xl'>Business</h2>
+          <p className='text-center'>59 Course</p>            
+
+        </div>
+        <div className='flex px-8 py-2.5 flex-col rounded-xl border border-gray-400 shadow-2xl'>
+  
+          <img classname="w-[100%]" src="https://img.icons8.com/?size=100&id=vkp1R61cszcp&format=png&color=000000" alt="" />
+          <h2 className='font-bold text-center text-xl'>Photography</h2>
+          <p className='text-center'>188 Course</p>            
+
+        </div>
+        <div className='flex px-8 py-2.5 flex-col rounded-xl border border-gray-400 shadow-2xl'>
+  
+          <img classname="w-[100%]" src="https://img.icons8.com/?size=100&id=12797&format=png&color=000000" alt="" />
+          <h2 className='font-bold text-center text-xl'>Music</h2>
+          <p className='text-center'>199 Course</p>            
+
         </div>
       </div>
       </div>
 
-      <div className='mt-20 bg-gray-100'>
+      <div className='mt-10 pb-5  bg-gray-100'>
        <h1 className='pt-20 font-bold text-4xl text-center'>Feature Course</h1>
       <p className='text-center text-xl'>Most Popular Course Choose Form Student</p>
         <div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-5 gap-2.5'> 
        {courses.map((c)=>(
-          <Card title={c.title} price={c.price} rate={c.rate} instructor={c.instructor}/>
+        <Link to={`/detail/${c["id"]}`}>
+            <Card title={c.title} img={c.img} price={c.price} rate={c.rate} instructor={c.instructor}/>
+        </Link>
+
        ))}   
 
         </div>

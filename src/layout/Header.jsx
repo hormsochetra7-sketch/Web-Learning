@@ -52,7 +52,7 @@ const Header = () => {
             </li>
           <li>
             <Link 
-            to={"/"} 
+            to={"/info"} 
             className='flex gap-1.5 items-center text-lg font-medium' >
               <FaInfoCircle className='text-xl' /> Info
             </Link>
@@ -76,20 +76,26 @@ const Header = () => {
     }`}
   >
     <ul className="px-3 py-2.5">
-      <li className="font-bold text-4xl text-center text-blue-400 ">
+      <li className="font-bold text-4xl text-center text-blue-600 ">
         Menu
       </li>
 
       <li>
-        <Link to="/" className='hover:bg-blue-200 py-1.5 px-1 rounded-md'>Home</Link>
+        <Link to="/" > <p className='hover:bg-blue-300 w-full py-2.5 rounded-md flex gap-1'><FaHome className='text-xl' /> Home</p></Link>
       </li>
 
       <li>
-        <Link to="/about">About</Link>
+        <Link to="/about"><p className='hover:bg-blue-300 w-full py-2.5 rounded-md flex gap-1'><FcAbout className='text-xl' /> About</p></Link>
       </li>
-
-      <li>1</li>
-      <li>1</li>
+      <li>
+        <Link to="/service"><p className='hover:bg-blue-300 w-full py-2.5 rounded-md flex gap-1'><MdOutlineSettings  className='text-xl' /> Service</p></Link>
+      </li>
+      <li>
+        <Link to="/contact"><p className='hover:bg-blue-300 w-full py-2.5 rounded-md flex gap-1'><RiCustomerService2Fill className='text-xl' /> Contact</p></Link>
+      </li>
+      <li>
+        <Link to="/info"><p className='hover:bg-blue-300 w-full py-2.5 rounded-md flex gap-1'><FaInfoCircle className='text-xl' /> Info</p></Link>
+      </li>
     </ul>
   </div>
 )}

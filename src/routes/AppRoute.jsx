@@ -5,6 +5,9 @@ import MainLayout from '../layout/MainLayout'
 import About from '../pages/About'
 import Service from '../pages/Service'
 import Contact from '../pages/Contact'
+import Detail from '../pages/Detail'
+import Notfound from '../pages/Notfound'
+import Formation from '../pages/Formation'
 
 const AppRoute = () => {
   return (
@@ -16,8 +19,12 @@ const AppRoute = () => {
         <Route path='/about' element={<About/>}/>
         <Route path='/service' element={<Service/>}/>
         <Route path='/contact' element={<Contact/>}/>
+       <Route path='/info' element={<Formation/>}/>
+        <Route path='/detail/:id' element={<Detail/>}/>
        
       </Route>
+
+      <Route path='*' element={<Notfound/>}/>
     </Routes>
     </>
   )

@@ -1,6 +1,8 @@
 import React from 'react'
-import { FaFacebookF } from "react-icons/fa";
-import { CiMail } from "react-icons/ci";
+import { FaFacebookF, FaInstagram, FaTwitch } from "react-icons/fa";
+import { CiMail, CiPhone, CiYoutube } from "react-icons/ci";
+import { IoLocationSharp } from 'react-icons/io5';
+import { LiaRssSolid } from "react-icons/lia";
 const Footer = () => {
   return (
     <div className='bg-gray-800 text-gray-50'>
@@ -10,16 +12,16 @@ const Footer = () => {
       <img className='w-14 rounded-2xl' src="https://etec-system.42web.io/assets/etec.png" alt="" />
       <h1 className='font-bold text-2xl'>ETEC CENTER</h1>
         </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic fugit quod cum soluta, aliquam laborum quisquam quaerat libero molestias</p>
+      <p>Empowering learners worldwide with high-quality online courses. Learn new skills, advance your career, and achieve your goals.</p>
        <ul className='mt-5 flex flex-col gap-1.5'>
         <li className='flex items-center gap-1.5'>
         <CiMail />@EtecCenter.com
         </li>
         <li className='flex items-center gap-1.5'>
-        <CiMail />@EtecCenter.com
+        <CiPhone />+1 (555) 123-4567
         </li>
         <li className='flex items-center gap-1.5'>
-        <CiMail />@EtecCenter.com
+        <IoLocationSharp />123 Learning St, Education City
         </li>
        </ul>
 
@@ -27,34 +29,34 @@ const Footer = () => {
       <div className=''>
         <h1 className='font-bold text-2xl'>QuckLink</h1>
         <ul className='grid gap-3.5'>
-          <li className='mt-2'>jj</li>
-          <li>kk</li>
-          <li>jjj</li>
-          <li>kk</li>
-          <li>jj</li>
-          <li>dd</li>
+          <li className='mt-2'>About Us</li>
+          <li>Courses</li>
+          <li>Instructors</li>
+          <li>Pricing</li>
+          <li>Blog</li>
+          <li>Contact</li>
         </ul>
       </div>
       <div className=''>
-       <h1 className='font-bold text-2xl'>QuckLink</h1>
+       <h1 className='font-bold text-2xl'>Categories</h1>
         <ul className='grid gap-3.5'>
-          <li className='mt-2'>jj</li>
-          <li>kk</li>
-          <li>jjj</li>
-          <li>kk</li>
-          <li>jj</li>
-          <li>dd</li>
+          <li className='mt-2'>Web Development</li>
+          <li>Mobile Development</li>
+          <li>Data Science</li>
+          <li>Design</li>
+          <li>Business</li>
+          <li>Marketing</li>
         </ul>
       </div>
       <div className=''>
-        <h1 className='font-bold text-2xl'>QuckLink</h1>
+        <h1 className='font-bold text-2xl'>Support</h1>
         <ul className='grid gap-3.5'>
-          <li className='mt-2'>jj</li>
-          <li>kk</li>
-          <li>jjj</li>
-          <li>kk</li>
-          <li>jj</li>
-          <li>dd</li>
+          <li className='mt-2'>Help Center</li>
+          <li>Terms of Service</li>
+          <li>Privacy Policy</li>
+          <li>Refund Policy</li>
+          <li>FAQ</li>
+          <li>Career</li>
         </ul>
           <h3 className="mt-5">Subscribe to Newsletter</h3>
 
@@ -75,10 +77,26 @@ const Footer = () => {
       <div className="w-full md:w-4/5 p-5 m-auto grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
         <div>© 2024 LearnHub. All rights reserved.</div>
         <div>
-          <ul className="flex gap-2.5 items-center">
+          <ul className="flex gap-7 items-center">
+            <li className="bg-gray-700 p-3 rounded-full hover:cursor-pointer hover:bg-blue-700 transition-all duration-150">
+              {" "}
+              <FaInstagram />{" "}
+            </li>
+            <li className="bg-gray-700 p-3 rounded-full hover:cursor-pointer hover:bg-blue-700 transition-all duration-150">
+              {" "}
+              <FaTwitch />{" "}
+            </li>
             <li className="bg-gray-700 p-3 rounded-full hover:cursor-pointer hover:bg-blue-700 transition-all duration-150">
               {" "}
               <FaFacebookF />{" "}
+            </li>
+            <li className="bg-gray-700 p-3 rounded-full hover:cursor-pointer hover:bg-blue-700 transition-all duration-150">
+              {" "}
+              <LiaRssSolid />{" "}
+            </li>
+            <li className="bg-gray-700 p-3 rounded-full hover:cursor-pointer hover:bg-blue-700 transition-all duration-150">
+              {" "}
+              <CiYoutube />{" "}
             </li>
           </ul>
         </div>
